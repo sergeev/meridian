@@ -142,13 +142,13 @@ h1#logo
 
 #top-menu {
   position: relative;
-  border: 1px solid #222;
-  background-color: #111;
-  background-image: -moz-linear-gradient(#444, #111);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
-  background-image: -webkit-linear-gradient(#444, #111);
-  background-image: -o-linear-gradient(#444, #111);
-  background-image: linear-gradient(#444, #111);
+  border: 1px solid #3695ff;
+  background-color: #3695ff;
+  background-image: -moz-linear-gradient(#444, #3695ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#3695ff));
+  background-image: -webkit-linear-gradient(#444, #3695ff);
+  background-image: -o-linear-gradient(#444, #3695ff);
+  background-image: linear-gradient(#444, #3695ff);
   border-radius: 6px;
   -moz-border-radius: 6px;
   -o-border-radius: 6px;
@@ -160,7 +160,7 @@ h1#logo
   -ms-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
   -webkit-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
   height: 40px;
-  margin: 50px auto;
+  margin: 10px auto;
   padding: 0;
   width: 960px;
   z-index: 10/* для отображения подпунктов поверх остальных блоков */
@@ -184,12 +184,12 @@ h1#logo
   text-transform: uppercase;
 }
 #top-menu ul li {
-  border-right: 1px solid #222;
-  box-shadow: 1px 0 0 #444;
-  -moz-box-shadow: 1px 0 0 #444;
-  -o-box-shadow: 1px 0 0 #444;
-  -ms-box-shadow: 1px 0 0 #444;
-  -webkit-box-shadow: 1px 0 0 #444;
+  /* border-right: 1px solid #3695ff;
+  box-shadow: 1px 0 0 #3695ff;
+  -moz-box-shadow: 1px 0 0 #3695ff;
+  -o-box-shadow: 1px 0 0 #3695ff;
+  -ms-box-shadow: 1px 0 0 #3695ff;
+  -webkit-box-shadow: 1px 0 0 #3695ff;*/
   position: relative;
   left: 50%;
   float: left;
@@ -238,7 +238,7 @@ h1#logo
 /*************************** Выпадающие подпункты **/
 
 #top-menu ul li ul {
-  background: #444;
+  background: #3695ff;
   background: -moz-linear-gradient(#444, #111);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
   background: -webkit-linear-gradient(#444, #111);
