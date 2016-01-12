@@ -103,94 +103,61 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
 </script>
 
 </head>
-
 <body>
+	<div id="all">
+			<div id="back">
+					<div id="header"> <!-- berin header -->
+							<div class="logoheader">
+								<jdoc:include type="modules" name="header" />
+							</div><!-- end logoheader -->
+					</div><!-- end header -->
 
-<div id="all">
-        <div id="back">
-                <div id="header">
-<div class="logoheader">
-				<jdoc:include type="modules" name="header" />
-                                </div><!-- end logoheader -->
-		</div><!-- end header -->
+						<div id="top-menu"> <!-- begin top menu -->
+								<jdoc:include type="modules" name="top-menu" />
+						</div><!-- end top menu -->
 
-                <div id="top-menu">
-			<jdoc:include type="modules" name="top-menu" />
-		</div>
-
-                        <div id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>">
-                                        <div id="breadcrumbs">
-
-                                                        <jdoc:include type="modules" name="navigation" />
-
-                                        </div>
-
-                                        <div id="search">
-
-                                                        <jdoc:include type="modules" name="search" />
-
-                                        </div>
-                                        <div class="clearfix"></div>
-
-                                        <?php if ($navposition=='left' and $showleft) : ?>
-               <?php endif; ?>
-
-                                        <div id="<?php echo $showRightColumn ? 'wrapper' : 'wrapper2'; ?>" <?php if (isset($showno)){echo 'class="shownocolumns"';}?>>
-
-                                                <div id="main">
-
-                                                <?php if ($this->countModules('top-news')): ?>
-                                                        <div id="top"><jdoc:include type="modules" name="top-news"   />
-                                                        </div>
-                                                <?php endif; ?>
-
-                                                        <jdoc:include type="message" />
-                                                        <jdoc:include type="component" />
-
-                                                </div><!-- end main -->
-
-                                        </div><!-- end wrapper -->
-
-                                                        <div class="right" id="nav">
-                                                   <jdoc:include type="modules" name="right" style="beezDivision" headerLevel="3" />
-                                                        </div><!-- end navi -->
-
-                                <div class="wrap"></div>
-
-                                </div> <!-- end contentarea -->
-
-                <div id="footer-outer">
-                        <?php if ($showbottom) : ?>
-                        <div id="footer-inner">
-
-                                <div id="bottom">
-                                        <div class="box box1"> <jdoc:include type="modules" name="wrap-1" style="beezDivision" headerlevel="3" /></div>
-                                        <div class="box box2"> <jdoc:include type="modules" name="wrap-2" style="beezDivision" headerlevel="3" /></div>
-                                        <div class="box box3"> <jdoc:include type="modules" name="wrap-3" style="beezDivision" headerlevel="3" /></div>
-                                </div>
-
-
-                        </div>
-                                <?php endif ; ?>
-
-                        <div id="footer-sub">
-
-
-                                <div id="footer">
-
-                                        <jdoc:include type="modules" name="footer" />
-
-                                </div><!-- end footer -->
-
-                        </div>
-
-                </div>
-
-
-                        </div><!-- back -->
-
-                </div><!-- all -->
-
-				<jdoc:include type="modules" name="debug" />
-        </body>
+							<div id="<?php echo $showRightColumn ? 'contentarea2' : 'contentarea'; ?>"><!-- begin contentarea -->
+								  <div id="breadcrumbs">
+										<jdoc:include type="modules" name="navigation" />
+								  </div>
+									  <div id="search"><!-- begin search -->
+											<jdoc:include type="modules" name="search" />
+									  </div><!-- end search -->
+											  <div class="clearfix"></div>
+													<?php if ($navposition=='left' and $showleft) : ?>
+														<?php endif; ?>
+															<div id="<?php echo $showRightColumn ? 'wrapper' : 'wrapper2'; ?>" <?php if (isset($showno)){echo 'class="shownocolumns"';}?>><!-- begin wrapper -->
+																  <div id="main"><!-- begin main -->
+																		<?php if ($this->countModules('top-news')): ?>
+																			<div id="top"><jdoc:include type="modules" name="top-news"   /></div>
+																		<?php endif; ?>
+																			<jdoc:include type="message" />
+																			<jdoc:include type="component" />
+																  </div><!-- end main -->
+															</div><!-- end wrapper -->
+															<div class="right" ><!-- begin nav right menu -->
+																	<jdoc:include type="modules" name="right" style="beezDivision" headerLevel="3" />
+															</div><!-- end nav right menu -->
+											<div class="wrap"></div>
+							 </div> <!-- end contentarea -->
+				  <div id="footer-outer"><!-- begin footer-outer -->
+									<?php if ($showbottom) : ?>
+									<div id="footer-inner">
+											<div id="bottom">
+													<div class="box box1"> <jdoc:include type="modules" name="wrap-1" style="beezDivision" headerlevel="3" /></div>
+													<div class="box box2"> <jdoc:include type="modules" name="wrap-2" style="beezDivision" headerlevel="3" /></div>
+													<div class="box box3"> <jdoc:include type="modules" name="wrap-3" style="beezDivision" headerlevel="3" /></div>
+											</div>
+									</div>
+											<?php endif ; ?>
+									<div id="footer-sub">
+											<div id="footer">
+													<jdoc:include type="modules" name="footer" />
+											</div><!-- end footer -->
+									</div>
+				  </div><!-- end footer-outer -->
+			</div><!-- back -->
+	</div><!-- all -->
+		<jdoc:include type="modules" name="debug" /><!-- debug mode -->
+</body>
 </html>
