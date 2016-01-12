@@ -1,0 +1,683 @@
+/**
+
+ * @author ( Angie Radtke )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2009 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+/* not ready */
+
+*
+{
+		margin: 0;
+        padding: 0;
+}
+
+body
+{
+    font-size: 100.01%;
+    padding: 0px;
+    text-align: center;
+    position:relative;
+}
+
+/* ###################### general ###################### */
+#all
+{
+    margin: 10px auto;
+    max-width:1300px;
+    padding: 0px;
+    text-align: left;
+    min-width:800px;
+}
+
+#header
+{
+    display:block !important;
+    position:relative;
+    padding:0px 0 0 0;
+    overflow:hidden;
+}
+
+#back
+{
+        margin: 0;
+        padding:0px;
+        box-shadow: 0 0 18px #555;
+}
+
+#contentarea,
+#contentarea2
+{
+    position:relative;
+    overflow:hidden;
+    padding:0px 0px !important;
+    margin:0;
+
+}
+
+#wrapper
+{
+		width:77%;
+        float:left;
+        position:relative;
+}
+
+#wrapper2
+{
+    width:72%;
+    float:left;
+    position:relative;
+    padding-bottom:20px
+
+}
+#wrapper2 .item-page
+{
+    max-width:660px
+}
+#main
+{
+    padding: 0px 15px 0px 15px;
+    position: relative;
+    min-height:420px;
+}
+
+.unseen,
+.hidelabeltxt
+{
+    display: inline;
+    height: 0px;
+    left: -3000px;
+    position: absolute;
+    top: -2000px;
+    width: 0px;
+}
+
+
+/* ++++++++++++++  nav before content  ++++++++++++++ */
+.right
+{
+    padding:5px 10px 0 0;
+    float: right;
+    width: 21%;
+    position:relative;
+}
+
+.leftbigger
+{
+     width:25%
+}
+
+
+#right-menu {
+    position: relative;
+    border: 1px solid #222;
+    background-color: #111;
+    background-image: -moz-linear-gradient(#444, #111);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+    background-image: -webkit-linear-gradient(#444, #111);
+    background-image: -o-linear-gradient(#444, #111);
+    background-image: linear-gradient(#444, #111);
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -ms-border-radius: 6px;
+    box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+    -moz-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+    -o-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+    -ms-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+    -webkit-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+    height: 40px;
+    margin: 50px auto;
+    padding: 0;
+    width: 960px;
+    z-index: 10/* для отображения подпунктов поверх остальных блоков */
+}
+
+#right-menu ul, /* сбрасываем поля и отступы у списков */
+#right-menu ul ul,
+#right-menu ul ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#right-menu ul {
+    clear: left;
+    position: relative;
+    right: 50%;
+    height: 40px;
+    float: right;
+    text-align: center;
+    font: 12px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+#right-menu ul li {
+    border-right: 1px solid #222;
+    box-shadow: 1px 0 0 #444;
+    -moz-box-shadow: 1px 0 0 #444;
+    -o-box-shadow: 1px 0 0 #444;
+    -ms-box-shadow: 1px 0 0 #444;
+    -webkit-box-shadow: 1px 0 0 #444;
+    position: relative;
+    left: 50%;
+    float: left;
+    height: 39px;
+}
+#right-menu ul li:last-child {
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none
+}
+#right-menu ul li a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 13px 25px
+}
+#right-menu ul > li:hover > a {
+    background-color: #0186BA;
+    background-image: -moz-linear-gradient(#04acec, #0186ba);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+    background-image: -webkit-linear-gradient(#04acec, #0186ba);
+    background-image: -o-linear-gradient(#04acec, #0186ba);
+    background-image: linear-gradient(#04acec, #0186ba);
+    color: #fafafa
+}
+
+/** Индикатор наличия подкатегорий верхнего уровня **/
+
+#right-menu > ul > li.parent > a::after {
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin: 4px 0 0 8px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    height: 5px;
+    width: 5px;
+}
+
+/*************************** Выпадающие подпункты **/
+
+#right-menu ul li ul {
+    background: #444;
+    background: -moz-linear-gradient(#444, #111);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+    background: -webkit-linear-gradient(#444, #111);
+    background: -o-linear-gradient(#444, #111);
+    background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#111));
+    background: linear-gradient(#444, #111);
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    text-transform: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    line-height: 18px;
+    top: 39px;
+    font-size: 12px;
+    margin-top: 20px;
+    height: auto;
+    min-width: 150px;
+    width: 100%
+}
+#right-menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: margin 0.3s ease 0s;
+    -moz-transition: margin 0.3s ease 0s;
+    -o-transition: margin 0.3s ease 0s;
+    transition: margin 0.3s ease 0s;
+    margin: 0;
+    z-index: 11;
+}
+#right-menu ul li ul li {
+    border: none;
+    box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    -moz-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    -o-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    -webkit-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    -ms-box-shadow: 0 1px 0 #111, 0 2px 0 #666;
+    position: relative;
+    left: 0;
+    float: none;
+    height: auto;
+    text-align: left !important;
+}
+#right-menu ul li ul li:last-child {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#right-menu ul li ul li a {
+    padding: 10px 15px;
+    border: none
+}
+
+/*************************** Выпадающие пункты второго уровня **/
+
+#right-menu ul li ul li ul {
+    top: 0;
+    left: 90%;
+    margin: 0 0 0 20px;
+    _margin: 0;
+    /*IE6 only*/
+    box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+    -moz-box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+    -o-box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+    -ms-box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+    -webkit-box-shadow: -1px 0 0 rgba(255, 255, 255, .3);
+}
+
+/** Индикатор наличия подкатегорий 2 уровня **/
+
+#right-menu > ul > li ul li.parent > a::after {
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 0px 0px 8px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    height: 5px;
+    width: 5px;
+    float: right;
+}
+
+/********************** Стрелочки на подпунктах **/
+
+#right-menu ul ul li:first-child > a {
+    border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    -o-border-radius: 3px 3px 0 0;
+    -ms-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+}
+#right-menu ul li > ul > li:first-child > a:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -6px;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+}
+#right-menu ul ul ul li:first-child a:before {
+    left: -6px;
+    top: 50%;
+    margin-top: -6px;
+    border-left: 0;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-right: 6px solid #3b3b3b;
+}
+#right-menu ul ul li:first-child a:hover:before {
+    border-bottom-color: #04acec
+}
+#right-menu ul ul ul li:first-child a:hover:before {
+    border-right-color: #0299d3;
+    border-bottom-color: transparent;
+}
+#right-menu ul ul li:last-child > a {
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+}
+#right-menu > ul > li.parent > ul > li:first-child > a::before {
+    display: none;
+}
+#right-menu > ul > li.parent > a::before {
+    bottom: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #444;
+    content: '';
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+}
+#right-menu > ul > li.parent:hover > a::before {
+    visibility: visible;
+    -webkit-transition: all .5s ease .2s;
+    -moz-transition: all .5s ease .2s;
+    -o-transition: all .5s ease .2s;
+    transition: all .5s ease .2s;
+}
+
+/* ########################## END RIGHT MENU CSS ##################### ###*/
+
+
+/* ###################### header ###################### */
+
+.skiplinks,
+.skiplinks li
+{
+    display: inline;
+    height: 0px;
+    line-height:0;
+    padding:0 !important;
+}
+
+.skiplinks li a.u2
+{
+    display: inline;
+    height: 0px;
+    left: -3000px;
+    position: absolute;
+    top: -2000px;
+    width: 0px;
+
+}
+
+.skiplinks li a.u2:active,
+.skiplinks li a.u2:focus
+{
+    position:absolute;
+    width:13em;
+    top:10px;
+    left:10px;
+    line-height:1.5em;
+    padding:5px;
+    font-weight:bold;
+    height:3em;
+
+}
+
+.wrap
+{
+    border: 0;
+    clear: both;
+    float: none;
+    font-size: 1px;
+    height: 0;
+    line-height: 1px;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+}
+
+h1#logo
+{
+        font-size:3.5em;
+        line-height:1.0em;
+}
+
+#logo
+{
+        margin-top:0.6em;
+        margin-left:10px;
+        /* position:absolute;*/
+        display:block;
+        padding:20px 20px 20px 10px;
+        width:425px;
+        padding-top:0.6em;
+        font-weight:normal;
+        line-height:1em;
+        font-size:3em;
+}
+
+#logo img
+{
+        display: block;
+}
+
+#logo span
+{
+        padding-left:2px
+}
+
+#logo span.header1
+{
+        font-size:0.4em;
+        display:block;
+        top:0em;
+        line-height:0.8em
+}
+
+.logoheader
+{
+        margin:0;
+        padding:0;
+        text-align:left;
+        font-weight:normal;
+        line-height:1.5em;
+
+}
+
+#line
+{       padding:5px 0px 2px 2px;
+        position:absolute;
+        right :20px;
+        top:5em;
+        max-width:38em;
+
+}
+
+
+/* ++++++++++++++  button for closing right column  ++++++++++++++ */
+
+#close
+{
+        margin-right:0px;
+        font-size:0.85em;
+        text-transform:uppercase;
+}
+
+#close span
+{
+    position:absolute;
+    right: 20px;
+    z-index:10000;
+    top:5px;
+    width:7em;
+    font-weight:bold;
+    text-align:right;
+    line-height:1.5em;
+    padding:5px 2px 5px 5px
+}
+
+/* ###################### main ###################### */
+
+/* ++++++++++++++  position  ++++++++++++++ */
+
+.blog-featured
+{
+        padding: 0;
+}
+
+.items-leading
+{
+        padding:0px 5px 10px 5px;
+        overflow:hidden;
+        margin-bottom:10px
+}
+
+.row-separator
+{
+        display: block;
+        clear: both;
+        margin: 0;
+        border: 0px;
+        height:1px
+}
+
+.item-separator
+{
+        display: none;
+        margin: 0px;
+}
+
+.shownocolumns
+{
+        width:98% !important;
+}
+
+#top
+{
+        margin:0 0 20px 0;
+        overflow:hidden
+}
+
+/* ++++++++++++++  blog  ++++++++++++++ */
+
+.cols-1
+{
+        display: block;
+        float: none !important;
+        margin: 0 !important;
+}
+
+.cols-2 .column-1
+{
+        width:46%;
+        float:left;
+}
+
+.cols-2 .column-2
+{
+        width:46%;
+        float:right;
+        margin:0
+}
+
+.cols-3 .column-1
+{
+        float:left;
+        width:29%;
+        padding:0px 5px;
+        margin-right:4%
+
+}
+.cols-3 .column-2
+{
+        float:left;
+        width:29%;
+        margin-left:0;
+        padding:0px 5px
+}
+.cols-3 .column-3
+{
+        float:right;
+        width:29%;
+        padding:0px 5px
+}
+
+.items-row
+{
+        overflow:hidden;
+        margin-bottom:10px !important;
+}
+
+.column-1,
+.column-2,
+.column-3
+{
+        padding:10px 5px
+}
+
+.column-2
+{
+        width:55%;
+        margin-left:40%;
+}
+
+.column-3
+{
+        width:30%
+}
+
+.blog-more
+{
+        padding:10px 5px
+}
+
+/* ++++++++++++++  footer  ++++++++++++++ */
+
+#bottom
+{
+        overflow:hidden
+}
+
+.box
+{
+        width:27%;
+        float:left;
+        margin-right:10px;
+        min-height:100px
+}
+
+.box1
+{
+        width:35%
+}
+
+.box2
+{
+        width:32%
+}
+
+.box3
+{
+        float:right
+}
+
+#footer-inner
+{
+        max-width:1300px;
+        margin:0 auto;
+        font-size:0.8em;
+        padding:10px 15px 15px 10px;
+}
+
+
+img
+{
+
+}
+
+/*
+    images/gallery/gorkovskaya/minobrnauki.png
+    images/gallery/gorkovskaya/departament.png
+    images/gallery/gorkovskaya/koin1.jpg
+    images/gallery/gorkovskaya/5.png
+*/
+
+.img-special img
+{
+    #display: inline-block;
+    width: 95%;
+    #font-size: 0;
+    #line-height: 0;
+    #vertical-align: middle;
+    background-size: cover;
+    #background-position: 50% 50%;
+    #background-repeat: no-repeat;
+}
