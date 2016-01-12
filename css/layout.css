@@ -250,7 +250,7 @@ em
         margin:0 0 20px 10px;
         padding: 5px;
         border-radius: 6px 6px;
-        box-shadow: 0 0 10px #888;
+        box-shadow: 0 0 5px #888;
         background-color: #deedfc;
 }
 
@@ -756,7 +756,7 @@ a.readmore:active,
 a.readmore:focus
 {
         text-decoration:none;
-        background: #C95757 url(../images/personal/navi_active.png) repeat-x;
+        background: #3695ff;
         color:#fff;
 }
 
@@ -765,7 +765,7 @@ a.readmore:focus
 #main .readmore a:focus
 {
         text-decoration:none;
-        background: #C95757 url(../images/personal/navi_active.png) repeat-x;
+        background: #3695ff;
 }
 
 /* ++++++++++++++  details  ++++++++++++++ */
@@ -2213,11 +2213,11 @@ span.spacer > span.text label {
 }
 .red {
 	font-weight: bold;
-	color: #c00;
+	color: #3695ff;
 }
 
 .star {
-	color:#cc0000;
+	color: #3695ff;
 }
 
 /* ++++++++++++++  news feeds direction ++++++++++++++ */
