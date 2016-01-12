@@ -48,9 +48,10 @@ body
 
 #back
 {
-        margin: 0;
-        padding:0px;
-        box-shadow: 0 0 18px #555;
+    margin: 0;
+    padding:0px;
+    box-shadow: 0 0 18px #555;
+    border-radius: 6px;
 }
 
 #contentarea,

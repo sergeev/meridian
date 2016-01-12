@@ -1143,11 +1143,28 @@ fieldset.input
 }
 
 input.button,
+{
+  background: #44921f;/* Fallback color for non-css3 browsers */
+  /* Gradients */
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0, rgb(79,188,32)), color-stop(0.15, rgb(73,157,34)), color-stop(0.88, rgb(62,135,28)), color-stop(1, rgb(49,114,21)));
+  background: -moz-linear-gradient( center top, rgb(79,188,32) 0%, rgb(73,157,34) 15%, rgb(62,135,28) 88%, rgb(49,114,21) 100%);
+  border: 0;
+  color: #eee;
+  cursor: pointer;
+  float: right;
+  font: 16px 'Raleway', sans-serif;
+  font-weight: bold;
+  height: 30px;
+  margin: 4px 4px 0;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  width: 84px;
+  outline: none;
+}
 button.button,
 button.validate
 {
 
-  background:#FFFFFF url(../images/nature/arrow1.gif) no-repeat left top;
+  /* background:#FFFFFF url(../images/nature/arrow1.gif) no-repeat left top; */
   border:1px solid #DDDDDD;
   color:#444444;
 }
@@ -1463,10 +1480,25 @@ body.contentpane
 
 #footer
 {
-  position:relative;
-    /*  background:url(../images/footer_bg.gif) repeat-x;*/
-  background:#333333 url(../images/personal/tabs_back.png) repeat-x;
-  color:#fff;
+  position: relative;
+  border: 1px solid #3695ff;
+  background-color: #3695ff;
+  background-image: -moz-linear-gradient(#444, #3695ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#444), to(#3695ff));
+  background-image: -webkit-linear-gradient(#444, #3695ff);
+  background-image: -o-linear-gradient(#444, #3695ff);
+  background-image: linear-gradient(#444, #3695ff);
+  border-radius: 6px 0 0 10px;
+  -moz-border-radius: 6px 0 0 10px;
+  -o-border-radius: 6px 0 0 10px;
+  -webkit-border-radius: 6px 0px;
+  -ms-border-radius: 6px 0 0 10px;
+  box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+  -moz-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+  -o-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+  -ms-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+  -webkit-box-shadow: 0 1px 1px #777, 0 1px 0 #666 inset;
+  box-shadow: 0 0 4px #000;
   border-top:solid 0px #ccc;
 }
 

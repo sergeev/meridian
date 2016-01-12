@@ -135,7 +135,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
 																			<jdoc:include type="component" />
 																  </div><!-- end main -->
 															</div><!-- end wrapper -->
-															<div class="right" ><!-- begin nav right menu -->
+															<div class="right"id="nav" ><!-- begin nav right menu -->
 																	<jdoc:include type="modules" name="right" style="beezDivision" headerLevel="3" />
 															</div><!-- end nav right menu -->
 											<div class="wrap"></div>
