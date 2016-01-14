@@ -203,7 +203,7 @@ h1#logo
 }
 #top-menu ul li a {
   display: block;
-  color: #ccc;
+  color: #fcfaff;
   text-decoration: none;
   padding: 13px 25px
 }
@@ -684,7 +684,7 @@ display:block;
 .right ul.menu li.active,
 .right ul.menu li.active a
 {
-  background: #C95757 url(../images/personal/navi_active.png) repeat-x ;
+  background: #0186BA;
   color:#fff;
   text-shadow: 1px 1px 2px #222;
 }
@@ -1051,17 +1051,19 @@ padding: 5px 0 0 0;
 .latestnews li a:link,
 .latestnews li a:visited
 {
-  background: url(../images/personal/arrow2_grey.png) 2px 7px  no-repeat ;
 }
  
 .mostread li a:hover,
 .latestnews li a:hover,
 .mostread li a:active,
-.latestnews li a:active,
+.latestnews li a:active
+{
+  background:#0299d3;
+}
 .mostread li a:focus,
 .latestnews li a:focus
 {
-  background:#C95757 url(../images/arrow_white_grey.png) 2px 7px  no-repeat !important;
+  background:#0299d3;
   color: #fff;
 }
 
