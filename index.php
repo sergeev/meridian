@@ -108,7 +108,7 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
 			<div id="back">
 					<div id="header"> <!-- berin header -->
 							<div class="logoheader">
-								<jdoc:include type="modules" name="header" />
+								<a href="./"><jdoc:include type="modules" name="header" /></a>
 							</div><!-- end logoheader -->
 					</div><!-- end header -->
 
@@ -142,17 +142,26 @@ $doc->addScript($this->baseurl.'/templates/'.$this->template.'/javascript/hide.j
 							 </div> <!-- end contentarea -->
 				  <div id="footer-outer"><!-- begin footer-outer -->
 									<?php if ($showbottom) : ?>
-									<div id="footer-inner">
-											<div id="bottom">
-													<div class="box box1"> <jdoc:include type="modules" name="wrap-1" style="beezDivision" headerlevel="3" /></div>
-													<div class="box box2"> <jdoc:include type="modules" name="wrap-2" style="beezDivision" headerlevel="3" /></div>
-													<div class="box box3"> <jdoc:include type="modules" name="wrap-3" style="beezDivision" headerlevel="3" /></div>
-											</div>
-									</div>
+										<div id="footer-inner">
+												<div id="bottom">
+														<div class="box box1"> <jdoc:include type="modules" name="wrap-1" style="beezDivision" headerlevel="3" /></div>
+														<div class="box box2"> <jdoc:include type="modules" name="wrap-2" style="beezDivision" headerlevel="3" /></div>
+														<div class="box box3"> <jdoc:include type="modules" name="wrap-3" style="beezDivision" headerlevel="3" /></div>
+												</div>
+										</div>
 											<?php endif ; ?>
 									<div id="footer-sub">
 											<div id="footer">
-													<jdoc:include type="modules" name="footer" />
+												<div class="md-footer">
+													<ul>
+														<li>
+															тел.:  8 (3843) 52-49-42, 8 (3843)  52-57-90 Адрес: 654031, г. Новокузнецк, ул. Горьковская, 11а Эл. почта: id_e-mail.ru
+														</li>
+														<li>
+															© 2013–2016 МБОУ ДОД "Центр детского (юношеского) технического творчества "<a href="./">Меридиан</a>"
+														</li>
+													</ul>
+												</div>
 											</div><!-- end footer -->
 									</div>
 				  </div><!-- end footer-outer -->
